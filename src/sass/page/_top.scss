@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.top-campaign {
+  margin-top: rem(40);
+  background-color: $white;
+  @include mq(md) {
+    margin-top: rem(122);
+  }
+}
+
+.top-aboutUs {
+  margin-top: rem(85);
+  @include mq(md) {
+    position: relative;
+    margin-top: rem(142);
+  }
+}
+
+.top-information {
+  margin-top: rem(85);
+  padding: rem(80) 0 rem(83);
+  background-color: $green2;
+  @include mq(md) {
+    margin-top: rem(142);
+    padding: rem(99) 0;
+  }
+}
+
+.top-blog {
+  padding-top: rem(80);
+  position: relative;
+  @include mq(md) {
+    padding-top: rem(100);
+  }
+}
+
+.top-voice {
+  margin-top: rem(84);
+  @include mq(md) {
+    margin-top: rem(144);
+    position: relative;
+  }
+}
+
+.top-price {
+  margin-top: rem(84);
+  padding: rem(80) 0 rem(85);
+  background-color: $green2;
+  @include mq(md) {
+    margin-top: rem(144);
+    padding: rem(101) 0 rem(105);
+    position: relative;
+  }
+}
