@@ -19,14 +19,13 @@ jQuery(function ($) {
     const webStorage = function () {
       if (sessionStorage.getItem("access")) {
         /*
-      Processing when accessed for the second time or later
-      */
-        $("body").removeClass("fixed");
+    Processing when accessed for the second time or later
+    */
         $(".loading").addClass("is-active");
       } else {
         /*
-      Processing for the first access
-      */
+    Processing for the first access
+    */
         sessionStorage.setItem("access", "true"); // Save data in sessionStorage
 
         $("body").addClass("fixed");
