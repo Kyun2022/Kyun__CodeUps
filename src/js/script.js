@@ -39,7 +39,7 @@ jQuery(function ($) {
           $("body")
             .delay(2000)
             .queue(function (next) {
-              $(this).removeClass("fixed");
+              $("body").removeClass("fixed");
               next();
             });
         });
