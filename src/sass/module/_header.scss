@@ -48,6 +48,12 @@
   display: flex;
   align-items: center;
 }
+.header__nav.u-desktop {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
 
 .header__items {
   height: inherit;
@@ -118,5 +124,3 @@
 .header__item--big {
   text-transform: uppercase;
 }
-
-

@@ -111,7 +111,12 @@
   width: rem(437);
   height: rem(201);
 }
-
+.price__decoration.u-desktop {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
 .price__decoration img {
   width: 100%;
   height: 100%;

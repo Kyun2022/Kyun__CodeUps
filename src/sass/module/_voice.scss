@@ -9,6 +9,13 @@
     ((100vw - rem(1440)) / 2 + rem(100)) - min(rem(0), (100vw - rem(1293)) / 2)
   );
 }
+
+.voice__top-decoration.u-desktop {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
 .voice__top-decoration img {
   width: 100%;
   height: 100%;
@@ -43,6 +50,13 @@
     ((100vw - rem(1440)) / 2 + rem(175)) - min(rem(0), (100vw - rem(1155)) / 2)
   );
   bottom: rem(-67);
+}
+
+.voice__bottom-decoration.u-desktop {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
 }
 .voice__bottom-decoration img {
   width: 100%;
