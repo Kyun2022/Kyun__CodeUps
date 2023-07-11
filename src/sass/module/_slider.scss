@@ -5,7 +5,6 @@
   padding-bottom: rem(10);
   margin-right: calc(50% - 50vw);
 
-
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -20,13 +19,17 @@
   display: flex;
   flex-direction: column;
   background-color: $white;
-
 }
 .slider__item a {
   display: inherit;
   flex-direction: inherit;
   flex-grow: 1;
 }
+.slider__item a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
 .slider__image {
   position: relative;
 }
@@ -155,6 +158,12 @@
   }
 }
 
+.slider__button {
+  display: flex;
+  position: absolute;
+  top: rem(3);
+  right: rem(25);
+}
 /* 前へ次への矢印カスタマイズ */
 .slider__button--prev,
 .slider__button--next {
@@ -163,21 +172,14 @@
   border: rem(1) solid $green;
   border-radius: 50%;
 }
-.slider__button--prev {
-  position: absolute;
-  top: 0;
-  left: calc((827 / 1080) * 100%);
-}
 .slider__button--next {
-  position: absolute;
-  top: 0;
-  right: calc((25 / 1080) * 100%);
+  margin-left: rem(80);
 }
 /* 前への矢印カスタマイズ */
 .slider__button--prev:after {
   position: absolute;
   top: 45%;
-  left: 28%;
+  left: 10%;
   content: "";
   display: inline-block;
   width: rem(40);
@@ -190,7 +192,7 @@
 .slider__button--next:after {
   position: absolute;
   top: 45%;
-  right: 28%;
+  right: 10%;
   content: "";
   display: inline-block;
   width: rem(40);

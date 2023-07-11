@@ -10,6 +10,15 @@
   position: relative;
 }
 
+.mv__slider,
+.mv__item picture,
+.mv__item img {
+  height: inherit;
+}
+.mv__item img {
+  object-fit: cover;
+}
+
 .mv__title {
   position: absolute;
   top: 50%;

@@ -4,31 +4,49 @@ jQuery(function ($) {
   // ハンバーガー
   $(".js-hamburger").on("click", function () {
     if ($(".js-hamburger").hasClass("is-open")) {
-      $(".js-drawer-menu").fadeOut();
+      $(".js-drawerMenu").fadeOut();
       $(this).removeClass("is-open");
       $("body").removeClass("active");
     } else {
-      $(".js-drawer-menu").fadeIn();
+      $(".js-drawerMenu").fadeIn();
       $(this).addClass("is-open");
       $("body").addClass("active");
     }
   });
 
   // ローディングアニメーション
-  $(window).on("load", function () {
-    $(".js-loading").delay(0).fadeIn(900);
-    $(".js-loadingTitle").delay(300).fadeIn(800);
-    $(".js-loading").delay(1000).fadeOut(900);
-    $("body")
-      .delay(3000)
-      .queue(function (next) {
-        $(this).removeClass("fixed");
-        next();
-      });
+  $(function () {
+    var webStorage = function () {
+      if (sessionStorage.getItem("access")) {
+        /*
+        2回目以降アクセス時の処理
+      */
+        $(".loading").addClass("is-active");
+        $("body").removeClass("fixed");
+      } else {
+        /*
+        初回アクセス時の処理
+      */
+        sessionStorage.setItem("access", "true"); // sessionStorageにデータを保存
+
+        $(window).on("load", function () {
+          $(".js-loading").delay(0).fadeIn(900);
+          $(".js-loadingTitle").delay(300).fadeIn(800);
+          $(".js-loading").delay(1000).fadeOut(900);
+          $("body")
+            .delay(2000)
+            .queue(function (next) {
+              $(this).removeClass("fixed");
+              next();
+            });
+        });
+      }
+    };
+    webStorage();
   });
 
   // Swiper
-  const swiper = new Swiper(".verticalSlider", {
+  const swiper = new Swiper(".js-mv__slider", {
     loop: true,
     allowTouchMove: false,
     effect: "fade",
@@ -40,7 +58,7 @@ jQuery(function ($) {
 
   // Swiperカード
   const mySwiperWrapper = document.querySelector(".swiper-wrapper");
-  const horizonSlider = new Swiper(".horizonSlider", {
+  const horizonSlider = new Swiper(".js-campaign__slider", {
     loop: true,
     effect: "slide",
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
@@ -64,9 +82,9 @@ jQuery(function ($) {
     //   slideChangeTransitionStart: function () {
     //     mySwiperWrapper.style.transitionTimingFunction = "linear";
     //   },
-      // resize: function () {
-      //   horizonSlider.autoplay.start();
-      // },
+    // resize: function () {
+    //   horizonSlider.autoplay.start();
+    // },
     // },
     // 前後の矢印
     navigation: {

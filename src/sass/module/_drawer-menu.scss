@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.drawer {
-  padding-top: rem(104);
-  padding-bottom: rem(104);
-  overflow-y: auto;
-}
-
 .drawer-menu {
   position: fixed;
   top: 0;
@@ -16,6 +10,10 @@
   background-color: $green;
   z-index: 8888;
   transition: transform 0.3s ease;
+
+  padding-top: rem(104);
+  padding-bottom: rem(104);
+  overflow-y: auto;
 }
 
 .drawer-menu.is-open {

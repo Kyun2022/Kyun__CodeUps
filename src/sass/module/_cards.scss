@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.cards-item {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .cards__items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -13,4 +8,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: rem(40);
   }
+}
+.cards__item {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cards__item a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }

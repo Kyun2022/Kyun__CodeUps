@@ -43,7 +43,7 @@
     height: rem(50);
   }
 }
-.header__list {
+.header__nav {
   height: inherit;
   display: flex;
   align-items: center;
@@ -105,10 +105,7 @@
     padding: 0 rem(19);
   }
 }
-.header__item--big {
-  text-transform: uppercase;
-}
-.header__sub-title {
+.header__item span {
   display: block;
   text-align: center;
   font-size: rem(10);
@@ -117,3 +114,9 @@
   line-height: calc(15 / 10);
   color: $white;
 }
+
+.header__item--big {
+  text-transform: uppercase;
+}
+
+

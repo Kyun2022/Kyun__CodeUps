@@ -39,8 +39,8 @@
 <body class="fixed">
   <div class="loading js-loading">
     <div class="loading__title js-loadingTitle">
-      <p class="loading__title-text">DIVING</p>
-      <h2 class="loading__title-subtext">into&nbsp;the&nbsp;ocean</h2>
+      <h2 class="loading__title-text">DIVING</h2>
+      <p class="loading__title-subtext">into&nbsp;the&nbsp;ocean</p>
     </div>
   </div>
 
@@ -48,28 +48,28 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo"><a href="#"><img src="./assets/images/common/logo_1.png" alt="CodeUpsの文字、会社のロゴ"></a></h1>
-      <nav class="header__list md-none">
+      <nav class="header__nav u-desktop">
         <ul class="header__items">
-          <li class="header__item"><a href="#campaign">campaign<span class="header__sub-title">キャンペーン</span></a></li>
-          <li class="header__item"><a href="#aboutUs">about us<span class="header__sub-title">私たちについて</span></a></li>
-          <li class="header__item"><a href="#information">information<span class="header__sub-title">ダイビング情報</span></a></li>
-          <li class="header__item"><a href="#blog">blog<span class="header__sub-title">ブログ</span></a></li>
-          <li class="header__item"><a href="#voice">voice<span class="header__sub-title">お客様の声</span></a></li>
-          <li class="header__item"><a href="#price">price<span class="header__sub-title">料金一覧</span></a></li>
-          <li class="header__item header__item--big"><a href="#faq">faq<span class="header__sub-title">よくある質問</span></a></li>
-          <li class="header__item"><a href="#contact">contact<span class="header__sub-title">お問い合わせ</span></a></li>
+          <li class="header__item"><a href="#campaign">campaign<span>キャンペーン</span></a></li>
+          <li class="header__item"><a href="#aboutUs">about us<span>私たちについて</span></a></li>
+          <li class="header__item"><a href="#information">information<span>ダイビング情報</span></a></li>
+          <li class="header__item"><a href="#blog">blog<span>ブログ</span></a></li>
+          <li class="header__item"><a href="#voice">voice<span>お客様の声</span></a></li>
+          <li class="header__item"><a href="#price">price<span>料金一覧</span></a></li>
+          <li class="header__item header__item--big"><a href="#faq">faq<span>よくある質問</span></a></li>
+          <li class="header__item"><a href="#contact">contact<span>お問い合わせ</span></a></li>
         </ul>
       </nav>
 
       <!-- ハンバーガーメニュー -->
-      <div class="hamburger js-hamburger md-show">
+      <div class="header__hamburger hamburger js-hamburger u-mobile">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       <!-- ドロワーメニュー -->
-      <div class="drawer-menu drawer js-drawer-menu all-close">
+      <div class="header__drawer drawer-menu js-drawerMenu u-allClose">
         <div class="drawer-menu__inner inner">
           <div class="drawer-menu__container-left">
             <div class="drawer-menu__contents">
@@ -111,7 +111,7 @@
               <p class="drawer-menu__list-name"><a href="#">よくある質問</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><a href="#">プライバシー<br class="md-show">ポリシー</a></p>
+              <p class="drawer-menu__list-name"><a href="#">プライバシー<br class="u-mobile">ポリシー</a></p>
             </div>
             <div class="drawer-menu__contents">
               <p class="drawer-menu__list-name"><a href="#">利用規約</a></p>
@@ -130,27 +130,27 @@
     <section class="mv">
       <div class="mv__inner">
         <!-- Swiper -->
-        <div class="swiper mv__swiper verticalSlider">
-          <div class="swiper-wrapper verticalSlider__items">
-            <div class="swiper-slide verticalSlider__item">
+        <div class="swiper mv__slider js-mv__slider">
+          <div class="swiper-wrapper mv__items">
+            <div class="swiper-slide mv__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_1.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_1.jpg" alt="透き通った海の中で大きな亀が泳いでいる様子">
               </picture>
             </div>
-            <div class="swiper-slide verticalSlider__item">
+            <div class="swiper-slide mv__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_2.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_2.jpg" alt="透き通った海の中から見上げると二人のダイバーと大きな亀が対面している">
               </picture>
             </div>
-            <div class="swiper-slide verticalSlider__item">
+            <div class="swiper-slide mv__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_3.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_3.jpg" alt="海の向こうに２つの島が見え、近くに船が動いている様子">
               </picture>
             </div>
-            <div class="swiper-slide verticalSlider__item">
+            <div class="swiper-slide mv__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_4.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_4.jpg" alt="青天のなか青々とした穏やかなな波が綺麗な砂浜に注ぎ込んでいる様子">
@@ -169,11 +169,11 @@
     <section class="campaign top-campaign" id="campaign">
       <div class="campaign__inner inner">
         <div class="campaign__title title title--center">
-          <p class="title__text"><span class="title__text--green">c</span>ampaign</p>
+          <p class="title__text">campaign</p>
           <h2 class="title__sub-text">キャンペーン</h2>
         </div>
         <!-- Swiper -->
-        <div class="swiper campaign__slider horizonSlider slider">
+        <div class="swiper campaign__slider slider js-campaign__slider">
           <div class="swiper-wrapper slider__items">
             <!-- swiper-card -->
             <article class="swiper-slide slider__item">
@@ -307,10 +307,12 @@
           </div>
         </div>
         <!-- 前後の矢印 -->
-        <div class="slider__button--prev md-none"></div>
-        <div class="slider__button--next md-none"></div>
+        <div class="slider__button">
+          <div class="slider__button--prev u-desktop"></div>
+          <div class="slider__button--next u-desktop"></div>
+        </div>
         <div class="campaign__button">
-          <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+          <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
         </div>
       </div>
     </section>
@@ -319,7 +321,7 @@
     <section class="aboutUs top-aboutUs" id="aboutUs">
       <div class="aboutUs__inner inner">
         <div class="aboutUs__title title title--center">
-          <p class="title__text"><span class="title__text--green">a</span>bout&nbsp;<span class="title__text--small">u</span>s</p>
+          <p class="title__text">about&nbsp;us</p>
           <h2 class="title__sub-text">私たちについて</h2>
         </div>
         <div class="aboutUs__images">
@@ -337,19 +339,19 @@
           <div class="aboutUs__meta">
             <p class="aboutUs__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
             <div class="aboutUs__button">
-              <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+              <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
             </div>
           </div>
         </div>
       </div>
-      <figure class="aboutUs__decoration md-none"><img src="./assets/images/common/coral-reef.png" alt="珊瑚礁の画像"></figure>
+      <figure class="aboutUs__decoration u-desktop"><img src="./assets/images/common/coral-reef.png" alt="珊瑚礁の画像"></figure>
     </section>
 
     <!-- information -->
     <section class="information top-information" id="information">
       <div class="information__inner inner">
         <div class="information__title title title--center">
-          <p class="title__text"><span class="title__text--green">i</span>nformation</p>
+          <p class="title__text">information</p>
           <h2 class="title__sub-text">ダイビング情報</h2>
         </div>
         <div class="information__container">
@@ -364,7 +366,7 @@
               </p>
             </div>
             <div class="information__button">
-              <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+              <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
             </div>
           </div>
         </div>
@@ -374,15 +376,15 @@
     <!-- blog -->
     <section class="blog top-blog" id="blog">
       <div class="blog__bgImage u-desktop"><img src="./assets/images/common/blog-bg.jpg" alt="海の中イメージした様子"></div>
-      <figure class="blog__decoration md-none"><img src="./assets/images/common/fishes-white.png" alt="魚の群れの様子"></figure>
+      <figure class="blog__decoration u-desktop"><img src="./assets/images/common/fishes-white.png" alt="魚の群れの様子"></figure>
       <div class="blog__inner inner">
         <div class="blog__title title title--center">
-          <p class="title__text title__text--white"><span class="title__text--green title__text--white">b</span>log</p>
+          <p class="title__text title__text--white">blog</p>
           <h2 class="title__sub-text title__sub-text--white">ブログ</h2>
         </div>
         <div class="blog__cards cards">
           <div class="cards__items">
-            <article class="cards-item card">
+            <article class="cards__item card">
               <a href="#">
                 <figure class="card__image"><img src="./assets/images/common/card_1.jpg" alt="透き通った海の中でピンク色の大きな珊瑚礁が輝いている様子"></figure>
                 <div class="card__body">
@@ -396,7 +398,7 @@
                 </div>
               </a>
             </article>
-            <article class="cards-item card">
+            <article class="cards__item card">
               <a href="#">
                 <figure class="card__image"><img src="./assets/images/common/card_2.jpg" alt="透き通った海の中で大きなウミガメが気持ち良さそうに泳いでいる様子"></figure>
                 <div class="card__body">
@@ -410,7 +412,7 @@
                 </div>
               </a>
             </article>
-            <article class="cards-item card">
+            <article class="cards__item card">
               <a href="#">
                 <figure class="card__image"><img src="./assets/images/common/card_3.jpg" alt="映画ファインディング・ニモで知られるカクレクマノミが珊瑚礁の中から顔をのぞかせている様子"></figure>
                 <div class="card__body">
@@ -426,7 +428,7 @@
             </article>
           </div>
           <div class="blog__button">
-            <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+            <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
           </div>
         </div>
       </div>
@@ -434,15 +436,15 @@
 
     <!-- voice -->
     <section class="voice top-voice" id="voice">
-      <figure class="voice__top-decoration md-none"><img src="./assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
+      <figure class="voice__top-decoration u-desktop"><img src="./assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
       <div class="voice__inner inner">
         <div class="voice__title title title--center">
-          <p class="title__text"><span class="title__text--green">v</span>oice</p>
+          <p class="title__text">voice</p>
           <h2 class="title__sub-text">お客様の声</h2>
         </div>
         <div class="voice__container boxes">
           <div class="boxes__items">
-            <article class="boxes-item box">
+            <article class="boxes__item box">
               <a href="#">
                 <div class="box__container">
                   <div class="box__header">
@@ -459,7 +461,7 @@
                 </div>
               </a>
             </article>
-            <article class="boxes-item box">
+            <article class="boxes__item box">
               <a href="#">
                 <div class="box__container">
                   <div class="box__header">
@@ -479,96 +481,96 @@
           </div>
         </div>
         <div class="voice__button">
-          <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+          <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
         </div>
       </div>
-      <figure class="voice__bottom-decoration md-none"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のデザイン"></figure>
+      <figure class="voice__bottom-decoration u-desktop"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のデザイン"></figure>
     </section>
 
     <!-- price -->
     <section class="price top-price" id="price">
       <div class="price__inner inner">
         <div class="prive__title title title--center">
-          <p class="title__text"><span class="title__text--green">p</span>rice</p>
+          <p class="title__text">price</p>
           <h2 class="title__sub-text">料金一覧</h2>
         </div>
         <div class="price__container">
-          <figure class="price__images js-slideColor4">
-            <img class="md-none" src="./assets/images/common/price-pc.jpg" alt="珊瑚礁の周辺にたくさんの赤い魚が泳いでいる様子">
-            <img class="md-show" src="./assets/images/common/price-sp.jpg" alt="橙色の大きな亀が泳いでいる様子">
-          </figure>
-          <div class="price__menu">
-            <div class="price__items">
-              <p class="price__header">ライセンス講習</p>
-              <ul class="price__item">
-                <li class="price__label">オープンウォーターダイバーコース</li>
-                <li class="price__text">&#165;50&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">アドバンスドオープンウォーターコース</li>
-                <li class="price__text">&#165;60&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">レスキュー＋EFRコース</li>
-                <li class="price__text">&#165;70&#44;000</li>
-              </ul>
-            </div>
-            <div class="price__items">
-              <p class="price__header">体験ダイビング</p>
-              <ul class="price__item">
-                <li class="price__label">ビーチ体験ダイビング(半日)</li>
-                <li class="price__text">&#165;7&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">ビーチ体験ダイビング(1日)</li>
-                <li class="price__text">&#165;14&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">ボート体験ダイビング(半日)</li>
-                <li class="price__text">&#165;10&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">ボート体験ダイビング(1日)</li>
-                <li class="price__text">&#165;18&#44;000</li>
-              </ul>
-            </div>
-            <div class="price__items">
-              <p class="price__header">ファンダイビング</p>
-              <ul class="price__item">
-                <li class="price__label">ビーチダイビング(2ダイブ)</li>
-                <li class="price__text">&#165;14&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">ボートダイビング(2ダイブ)</li>
-                <li class="price__text">&#165;18&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">スペシャルダイビング(2ダイブ)</li>
-                <li class="price__text">&#165;24&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">ナイトダイビング(1ダイブ)</li>
-                <li class="price__text">&#165;10&#44;000</li>
-              </ul>
-            </div>
-            <div class="price__items">
-              <p class="price__header">スペシャルダイビング</p>
-              <ul class="price__item">
-                <li class="price__label">貸切ダイビング(2ダイブ)</li>
-                <li class="price__text">&#165;24&#44;000</li>
-              </ul>
-              <ul class="price__item">
-                <li class="price__label">1日ダイビング(3ダイブ)</li>
-                <li class="price__text">&#165;32&#44;000</li>
-              </ul>
-            </div>
-          </div>
+          <picture class="price__images js-slideColor4">
+            <source srcset="./assets/images/common/price-pc.jpg" media="(min-width:768px)">
+            <img src="./assets/images/common/price-sp.jpg" alt="橙色の大きな亀が泳いでいる様子">
+          </picture>
+          <ul class="price__menu">
+            <li class="price__items">
+              <h3 class="price__header">ライセンス講習</h3>
+              <dl class="price__item">
+                <dt class="price__label">オープンウォーターダイバーコース</dt>
+                <dd class="price__text">&#165;50&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">アドバンスドオープンウォーターコース</dt>
+                <dd class="price__text">&#165;60&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">レスキュー＋EFRコース</dt>
+                <dd class="price__text">&#165;70&#44;000</dd>
+              </dl>
+            </li>
+            <li class="price__items">
+              <h3 class="price__header">体験ダイビング</h3>
+              <dl class="price__item">
+                <dt class="price__label">ビーチ体験ダイビング(半日)</dt>
+                <dd class="price__text">&#165;7&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">ビーチ体験ダイビング(1日)</dt>
+                <dd class="price__text">&#165;14&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">ボート体験ダイビング(半日)</dt>
+                <dd class="price__text">&#165;10&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">ボート体験ダイビング(1日)</dt>
+                <dd class="price__text">&#165;18&#44;000</dd>
+              </dl>
+            </li>
+            <li class="price__items">
+              <h3 class="price__header">ファンダイビング</h3>
+              <dl class="price__item">
+                <dt class="price__label">ビーチダイビング(2ダイブ)</dt>
+                <dd class="price__text">&#165;14&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">ボートダイビング(2ダイブ)</dt>
+                <dd class="price__text">&#165;18&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">スペシャルダイビング(2ダイブ)</dt>
+                <dd class="price__text">&#165;24&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">ナイトダイビング(1ダイブ)</dt>
+                <dd class="price__text">&#165;10&#44;000</dd>
+              </dl>
+            </li>
+            <li class="price__items">
+              <h3 class="price__header">スペシャルダイビング</h3>
+              <dl class="price__item">
+                <dt class="price__label">貸切ダイビング(2ダイブ)</dt>
+                <dd class="price__text">&#165;24&#44;000</dd>
+              </dl>
+              <dl class="price__item">
+                <dt class="price__label">1日ダイビング(3ダイブ)</dt>
+                <dd class="price__text">&#165;32&#44;000</dd>
+              </dl>
+            </li>
+          </ul>
         </div>
         <div class="price__button">
-          <button class="button button__bg" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
+          <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
         </div>
       </div>
-      <figure class="price__decoration md-none"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
+      <figure class="price__decoration u-desktop"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
     </section>
 
     <!-- contact -->
@@ -592,18 +594,17 @@
           </div>
           <div class="contact__action">
             <div class="contact__title title title--center">
-              <p class="title__text title__text--big"><span class="title__text--green">c</span>ontact</p>
+              <p class="title__text title__text--big">contact</p>
               <h2 class="title__sub-text title__sub-text--layout">お問い合わせ</h2>
               <p class="title__emphasis">ご予約・お問い合わせはコチラ</p>
               <div class="title__button">
-                <button class="button button__bg" onclick="location.href='#'">Contact&nbsp;us<span class="button__arrow"></span></button>
+                <button class="button" onclick="location.href='#'">Contact&nbsp;us<span class="button__arrow"></span></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- footer -->
@@ -616,7 +617,7 @@
           <div class="footer__sns-instagram"><img src="./assets/images/common/InstagramLogo.png" alt="インスタグラム会社のロゴ"></div>
         </div>
       </div>
-      <div class="footer-menu">
+      <div class="footer__menu footer-menu">
         <div class="footer-menu__container-left">
           <div class="footer-menu__sub-container--left1">
             <div class="footer-menu__contents">
@@ -664,7 +665,7 @@
               <p class="footer-menu__list-name footer-menu__list-name--space"><a href="#">よくある質問</a></p>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><a href="#">プライバシー<br class="md-show">ポリシー</a></p>
+              <p class="footer-menu__list-name"><a href="#">プライバシー<br class="u-mobile">ポリシー</a></p>
             </div>
             <div class="footer-menu__contents">
               <p class="footer-menu__list-name"><a href="#">利用規約</a></p>

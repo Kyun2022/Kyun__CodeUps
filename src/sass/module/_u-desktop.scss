@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+@if $startFrom == sp {
+  //pcで表示
+  .u-desktop {
+    display: none;
+    @include mq("md") {
+      display: block;
+    }
+  }
+  //モバイルのみ表示
+  .u-mobile {
+    display: block;
+    @include mq("md") {
+      display: none;
+    }
+  }
+} @else {
+  //pcで表示
+  .u-desktop {
+    display: block;
+    @include mq("md") {
+      display: none;
+    }
+  }
+  //モバイルのみ表示
+  .u-mobile {
+    display: none;
+    @include mq("md") {
+      display: block;
+    }
+  }
+}
+
+//何時も非表示
+.u-allClose {
+  display: none;
+}
