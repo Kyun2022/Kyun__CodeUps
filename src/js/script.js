@@ -38,6 +38,7 @@ jQuery(function ($) {
       $(".js-loading").hide();
       $(".js-loadingTitle").hide();
       $("body").removeClass("fixed");
+      $(window).scrollTop(0); // スクロール位置をトップに戻す
     }
   });
 
