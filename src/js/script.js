@@ -16,13 +16,13 @@ jQuery(function ($) {
 
   // ローディングアニメーション
   $(function () {
-    var webStorage = function () {
+    const webStorage = function () {
       if (sessionStorage.getItem("access")) {
         /*
         2回目以降アクセス時の処理
       */
-        $(".loading").addClass("is-active");
         $("body").removeClass("fixed");
+        $(".loading").addClass("is-active");
       } else {
         /*
         初回アクセス時の処理
