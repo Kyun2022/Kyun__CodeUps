@@ -10,7 +10,12 @@
   display: inline-block;
   z-index: 9999;
 }
-
+.hamburger--md-show {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
 .hamburger span {
   position: absolute;
   height: rem(1);
@@ -39,5 +44,5 @@
 .hamburger.is-open span:nth-child(3) {
   width: rem(40);
   transform-origin: bottom left;
-  transform:rotate(-36.87deg);
+  transform: rotate(-36.87deg);
 }

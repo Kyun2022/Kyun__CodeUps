@@ -48,7 +48,7 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo"><a href="#"><img src="./assets/images/common/logo_1.png" alt="CodeUpsの文字、会社のロゴ"></a></h1>
-      <nav class="header__nav u-desktop">
+      <nav class="header__nav header__nav--md-none">
         <ul class="header__items">
           <li class="header__item"><a href="#campaign">campaign<span>キャンペーン</span></a></li>
           <li class="header__item"><a href="#aboutUs">about us<span>私たちについて</span></a></li>
@@ -62,14 +62,14 @@
       </nav>
 
       <!-- ハンバーガーメニュー -->
-      <div class="header__hamburger hamburger js-hamburger u-mobile">
+      <div class="header__hamburger hamburger hamburger--md-show js-hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       <!-- ドロワーメニュー -->
-      <div class="header__drawer drawer-menu js-drawerMenu u-allClose">
+      <div class="header__drawer drawer-menu drawer-menu__all-close js-drawerMenu">
         <div class="drawer-menu__inner inner">
           <div class="drawer-menu__container-left">
             <div class="drawer-menu__contents">
@@ -308,8 +308,8 @@
         </div>
         <!-- 前後の矢印 -->
         <div class="slider__button">
-          <div class="slider__button--prev u-desktop"></div>
-          <div class="slider__button--next u-desktop"></div>
+          <div class="slider__prevButton slider__prevButton--md-none"></div>
+          <div class="slider__nextButton slider__nextButton--md-none"></div>
         </div>
         <div class="campaign__button">
           <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
@@ -344,7 +344,7 @@
           </div>
         </div>
       </div>
-      <figure class="aboutUs__decoration u-desktop"><img src="./assets/images/common/coral-reef.png" alt="珊瑚礁の画像"></figure>
+      <figure class="aboutUs__decoration aboutUs__decoration--md-none"><img src="./assets/images/common/coral-reef.png" alt="珊瑚礁の画像"></figure>
     </section>
 
     <!-- information -->
@@ -375,8 +375,8 @@
 
     <!-- blog -->
     <section class="blog top-blog" id="blog">
-      <div class="blog__bgImage u-desktop"><img src="./assets/images/common/blog-bg.jpg" alt="海の中イメージした様子"></div>
-      <figure class="blog__decoration u-desktop"><img src="./assets/images/common/fishes-white.png" alt="魚の群れの様子"></figure>
+      <div class="blog__bgImage blog__bgImage--md-none"><img src="./assets/images/common/blog-bg.jpg" alt="海の中イメージした様子"></div>
+      <figure class="blog__decoration blog__decoration--md-none"><img src="./assets/images/common/fishes-white.png" alt="魚の群れの様子"></figure>
       <div class="blog__inner inner">
         <div class="blog__title title title--center">
           <p class="title__text title__text--white">blog</p>
@@ -436,7 +436,7 @@
 
     <!-- voice -->
     <section class="voice top-voice" id="voice">
-      <figure class="voice__top-decoration u-desktop"><img src="./assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
+      <figure class="voice__top-decoration voice__top-decoration--md-none"><img src="./assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
       <div class="voice__inner inner">
         <div class="voice__title title title--center">
           <p class="title__text">voice</p>
@@ -484,7 +484,7 @@
           <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
         </div>
       </div>
-      <figure class="voice__bottom-decoration u-desktop"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のデザイン"></figure>
+      <figure class="voice__bottom-decoration voice__bottom-decoration--md-none"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のデザイン"></figure>
     </section>
 
     <!-- price -->
@@ -570,7 +570,7 @@
           <button class="button" onclick="location.href='#'">View&nbsp;more<span class="button__arrow"></span></button>
         </div>
       </div>
-      <figure class="price__decoration u-desktop"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
+      <figure class="price__decoration price__decoration--md-none"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
     </section>
 
     <!-- contact -->

@@ -10,7 +10,7 @@
   );
 }
 
-.voice__top-decoration.u-desktop {
+.voice__top-decoration--md-none {
   display: none;
   @include mq("md") {
     display: block;
@@ -52,7 +52,7 @@
   bottom: rem(-67);
 }
 
-.voice__bottom-decoration.u-desktop {
+.voice__bottom-decoration--md-none {
   display: none;
   @include mq("md") {
     display: block;

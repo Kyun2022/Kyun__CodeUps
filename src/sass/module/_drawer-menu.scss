@@ -16,6 +16,9 @@
   overflow-y: auto;
 }
 
+.drawer-menu__all-close {
+  display: none;
+}
 .drawer-menu.is-open {
   display: block;
 }

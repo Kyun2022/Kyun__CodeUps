@@ -165,19 +165,27 @@
   right: rem(25);
 }
 /* 前へ次への矢印カスタマイズ */
-.slider__button--prev,
-.slider__button--next {
+.slider__prevButton,
+.slider__nextButton {
   height: rem(80);
   width: rem(80);
   border: rem(1) solid $green;
   border-radius: 50%;
   cursor: pointer;
 }
-.slider__button--next {
+.slider__prevButton--md-none,
+.slider__nextButton--md-none {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.slider__nextButton {
   margin-left: rem(80);
 }
 /* 前への矢印カスタマイズ */
-.slider__button--prev:after {
+.slider__prevButton:after {
   position: absolute;
   top: 45%;
   left: 10%;
@@ -190,7 +198,7 @@
   border-left: rem(1) solid $green;
 }
 /* 次への矢印カスタマイズ */
-.slider__button--next:after {
+.slider__nextButton:after {
   position: absolute;
   top: 45%;
   right: 10%;

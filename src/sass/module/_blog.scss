@@ -8,7 +8,7 @@
   left: 0;
   z-index: -1;
 }
-.blog__bgImage.u-desktop {
+.blog__bgImage--md-none {
   display: none;
   @include mq("md") {
     display: block;
@@ -31,7 +31,7 @@
   );
   z-index: 10;
 }
-.blog__decoration.desktop {
+.blog__decoration--md-none {
   display: none;
   @include mq("md") {
     display: block;

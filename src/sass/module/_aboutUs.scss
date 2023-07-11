@@ -116,7 +116,7 @@
   height: rem(181);
 }
 
-.aboutUs__decoration.u-desktop {
+.aboutUs__decoration--md-none {
   display: none;
   @include mq("md") {
     display: block;
