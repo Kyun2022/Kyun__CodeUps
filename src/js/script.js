@@ -19,15 +19,14 @@ jQuery(function ($) {
     const webStorage = function () {
       if (sessionStorage.getItem("access")) {
         /*
-        2回目以降アクセス時の処理
+      Processing when accessed for the second time or later
       */
-        $("body").removeClass("fixed");
         $(".loading").addClass("is-active");
       } else {
         /*
-        初回アクセス時の処理
+      Processing for the first access
       */
-        sessionStorage.setItem("access", "true"); // sessionStorageにデータを保存
+        sessionStorage.setItem("access", "true"); // Save data in sessionStorage
 
         $(window).on("load", function () {
           $(".js-loading").delay(0).fadeIn(900);
