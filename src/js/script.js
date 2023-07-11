@@ -21,12 +21,16 @@ jQuery(function ($) {
         /*
       Processing when accessed for the second time or later
       */
+        $("body").removeClass("fixed");
         $(".loading").addClass("is-active");
       } else {
         /*
       Processing for the first access
       */
         sessionStorage.setItem("access", "true"); // Save data in sessionStorage
+
+        $("body").addClass("fixed");
+        $(".loading").addClass("is-active");
 
         $(window).on("load", function () {
           $(".js-loading").delay(0).fadeIn(900);
