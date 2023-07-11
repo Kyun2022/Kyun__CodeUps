@@ -15,36 +15,30 @@ jQuery(function ($) {
   });
 
   // ローディングアニメーション
-  $(function () {
-    const webStorage = function () {
-      if (sessionStorage.getItem("access")) {
-        /*
-    Processing when accessed for the second time or later
-    */
-        $(".loading").addClass("is-active");
-      } else {
-        /*
-    Processing for the first access
-    */
-        sessionStorage.setItem("access", "true"); // Save data in sessionStorage
+  $(window).on("load", function () {
+    // ローカルストレージからロード回数を取得
+    var loadCount = localStorage.getItem("loadCount");
 
-        $("body").addClass("fixed");
-        $(".loading").addClass("is-active");
-
-        $(window).on("load", function () {
-          $(".js-loading").delay(0).fadeIn(900);
-          $(".js-loadingTitle").delay(300).fadeIn(800);
-          $(".js-loading").delay(1000).fadeOut(900);
-          $("body")
-            .delay(2000)
-            .queue(function (next) {
-              $("body").removeClass("fixed");
-              next();
-            });
+    // 初回のロード時の処理
+    if (loadCount === null) {
+      $(".js-loading").delay(0).fadeIn(900);
+      $(".js-loadingTitle").delay(300).fadeIn(800);
+      $(".js-loading").delay(1000).fadeOut(900);
+      $("body")
+        .delay(2000)
+        .queue(function (next) {
+          $("body").removeClass("fixed");
+          next();
         });
-      }
-    };
-    webStorage();
+
+      // ローカルストレージにロード回数を保存
+      localStorage.setItem("loadCount", 1);
+    } else {
+      // 2回目以降のロード時の処理
+      $(".js-loading").hide();
+      $(".js-loadingTitle").hide();
+      $("body").removeClass("fixed");
+    }
   });
 
   // Swiper
