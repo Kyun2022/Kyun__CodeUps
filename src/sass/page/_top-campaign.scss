@@ -3,7 +3,7 @@
 .top-campaign {
   margin-top: rem(40);
   background-color: $white;
-  overflow: hidden;
+
   @include mq(md) {
     margin-top: rem(122);
   }
