@@ -75,18 +75,10 @@ jQuery(function ($) {
     autoplay: {
       delay: 1000,
     },
-    // on: {
-    //   slideChangeTransitionStart: function () {
-    //     mySwiperWrapper.style.transitionTimingFunction = "linear";
-    //   },
-    // resize: function () {
-    //   horizonSlider.autoplay.start();
-    // },
-    // },
     // 前後の矢印
     navigation: {
-      nextEl: ".slider__button--next",
-      prevEl: ".slider__button--prev",
+      nextEl: ".slider__nextButton",
+      prevEl: ".slider__prevButton",
     },
   });
 

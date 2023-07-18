@@ -4,7 +4,6 @@
   margin-top: rem(17);
   padding-bottom: rem(10);
   margin-right: calc(50% - 50vw);
-
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -181,7 +180,7 @@
   }
 }
 
-.slider__nextButton {
+.slider__prevButton {
   margin-left: rem(80);
 }
 /* 前への矢印カスタマイズ */
@@ -210,3 +209,58 @@
   border-bottom: rem(1) solid $green;
   border-right: rem(1) solid $green;
 }
+
+/*//////////////////////////////////////
+下層Campaign追加
+/////////////////////////////////////*/
+.slider__detail {
+  height: inherit;
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.slider__detail--md-none {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.slider__text {
+  color: $dark-green;
+  font-family: $jp-font-family1;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(24 / 16);
+}
+
+.slider__box {
+  margin-top: rem(32);
+  text-align: center;
+}
+
+.slider__date {
+  color: $green;
+  font-family: $en-font-family2;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: calc(18 / 16);
+}
+
+.slider__sub-text {
+  margin-top: rem(7);
+  color: $green;
+  font-family: $jp-font-family1;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(18 / 14);
+}
+
+.slider__button-block {
+  margin-top: rem(16);
+}
+
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

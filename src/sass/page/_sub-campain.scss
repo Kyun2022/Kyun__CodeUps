@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.sub-campaign {
+  position: relative;
+}
+
+.sub-campaign__decoration {
+  position: absolute;
+  top: rem(50);
+  left: rem(15);
+  width: rem(120);
+  height: rem(55);
+  z-index: -1;
+  @include mq(md) {
+    top: rem(108);
+    width: rem(301);
+    height: rem(138);
+    left: calc(
+      ((100vw - rem(1440)) / 2 + rem(98)) - min(rem(0), (100vw - rem(1293)) / 2)
+    );
+  }
+}
+
+.sub-campaign__inner {
+}
+.sub-campaign__breadcrumb {
+  margin-top: rem(8);
+}
+
+.sub-campaign__breadcrumb-text {
+  color: $dark-green;
+  font-family: $jp-font-family1;
+  font-size: rem(14);
+  font-weight: $normal;
+}
+
+.sub-campaign__menu {
+  margin-top: rem(40);
+}
+
+.sub-campaign__items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(40);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(80);
+  }
+}
