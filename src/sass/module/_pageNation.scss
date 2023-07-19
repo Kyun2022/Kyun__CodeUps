@@ -30,3 +30,9 @@
 .pageNation__item--current a {
   color: $white;
 }
+.pageNation__item--md-none {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

@@ -57,8 +57,9 @@
 }
 // Campaign__reset.cssを打ち消す
 .slider__body.slider__body--layout {
+  margin-top: initial;
+  padding: rem(17) rem(16) rem(21);
   @include mq(md) {
-    margin-top: initial;
     padding: rem(24) rem(24) rem(42);
   }
 }
@@ -271,7 +272,7 @@
 .slider__button-block {
   margin-top: rem(15);
 }
-.slider__button-block button::first-letter{
+.slider__button-block button::first-letter {
   text-transform: capitalize;
 }
 /*//////////////////////////////////////
