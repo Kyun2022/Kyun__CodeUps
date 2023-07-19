@@ -42,4 +42,50 @@
     height: rem(40);
   }
 }
+/*//////////////////////////////////////
+アニメーション
+/////////////////////////////////////*/
+/*リンクを右下に固定*/
+#pageTop {
+	position: fixed;
+	right: 10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
 
+/*　上に上がる動き　*/
+
+#pageTop.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#pageTop.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

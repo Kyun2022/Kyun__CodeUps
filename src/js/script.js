@@ -193,42 +193,93 @@ box4.each(function () {
     }
   });
 
-  // pageTop
-  let timer = null;
-  const $pageTop = $("#pageTop");
-  $pageTop.hide();
+  // // pageTop
+  // let timer = null;
+  // const $pageTop = $("#pageTop");
+  // $pageTop.hide();
 
-  // スクロールイベント
-  $(window).on("scroll touchmove", function () {
-    // スクロール中か判定
-    if (timer !== false) {
-      clearTimeout(timer);
-    }
+  // // スクロールイベント
+  // $(window).on("scroll touchmove", function () {
+  //   // スクロール中か判定
+  //   if (timer !== false) {
+  //     clearTimeout(timer);
+  //   }
 
-    // スクロール量が100pxを超えたら、200ms後にフェードイン
-    timer = setTimeout(function () {
-      if ($(this).scrollTop() > 100) {
-        $("#pageTop").fadeIn("normal");
-      } else {
-        $pageTop.fadeOut();
-      }
-    }, 200);
+  //   // スクロール量が100pxを超えたら、200ms後にフェードイン
+  //   timer = setTimeout(function () {
+  //     if ($(this).scrollTop() > 100) {
+  //       $("#pageTop").fadeIn("normal");
+  //     } else {
+  //       $pageTop.fadeOut();
+  //     }
+  //   }, 200);
 
-    const scrollHeight = $(document).height();
-    const scrollPosition = $(window).height() + $(window).scrollTop();
-    const footHeight = parseInt($("#footer").innerHeight());
+  //   const scrollHeight = $(document).height();
+  //   const scrollPosition = $(window).height() + $(window).scrollTop();
+  //   const footHeight = parseInt($("#footer").innerHeight());
 
-    if (scrollHeight - scrollPosition <= footHeight - 20) {
-      // 現在の下から位置が、フッターの高さの位置にはいったら(bottom20px分を引いて調整)
-      $pageTop.css({
-        position: "absolute",
-        bottom: footHeight,
-      });
+  //   if (scrollHeight - scrollPosition <= footHeight - 20) {
+  //     // 現在の下から位置が、フッターの高さの位置にはいったら(bottom20px分を引いて調整)
+  //     $pageTop.css({
+  //       position: "absolute",
+  //       bottom: footHeight,
+  //     });
+  //   } else {
+  //     $pageTop.css({
+  //       position: "fixed",
+  //       bottom: "20px",
+  //     });
+  //   }
+  // });
+
+  //スクロールした際の動きを関数でまとめる
+  function PageTopAnime() {
+    var scroll = $(window).scrollTop(); //スクロール値を取得
+    if (scroll >= 200) {
+      //200pxスクロールしたら
+      $("#pageTop").removeClass("DownMove"); // DownMoveというクラス名を除去して
+      $("#pageTop").addClass("UpMove"); // UpMoveというクラス名を追加して出現
     } else {
-      $pageTop.css({
-        position: "fixed",
-        bottom: "20px",
-      });
+      //それ以外は
+      if ($("#pageTop").hasClass("UpMove")) {
+        //UpMoveというクラス名が既に付与されていたら
+        $("#pageTop").removeClass("UpMove"); //  UpMoveというクラス名を除去し
+        $("#pageTop").addClass("DownMove"); // DownMoveというクラス名を追加して非表示
+      }
     }
+
+    var wH = window.innerHeight; //画面の高さを取得
+    var footerPos = $("#footer").offset().top; //footerの位置を取得
+    if (scroll + wH >= footerPos + 10) {
+      var pos = scroll + wH - footerPos + 10; //スクロールの値＋画面の高さからfooterの位置＋10pxを引いた場所を取得し
+      $("#pageTop").css("bottom", pos); //#pageTopに上記の値をCSSのbottomに直接指定してフッター手前で止まるようにする
+    } else {
+      //それ以外は
+      if ($("#pageTop").hasClass("UpMove")) {
+        //UpMoveというクラス名がついていたら
+        $("#pageTop").css("bottom", "10px"); // 下から10pxの位置にページリンクを指定
+      }
+    }
+  }
+
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    PageTopAnime(); /* スクロールした際の動きの関数を呼ぶ*/
+  });
+
+  // ページが読み込まれたらすぐに動かしたい場合の記述
+  $(window).on("load", function () {
+    PageTopAnime(); /* スクロールした際の動きの関数を呼ぶ*/
+  });
+
+  // #pageTopをクリックした際の設定
+  $("#pageTop").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, //ページトップまでスクロール
+      },
+      500
+    ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false; //リンク自体の無効化
   });
 });
