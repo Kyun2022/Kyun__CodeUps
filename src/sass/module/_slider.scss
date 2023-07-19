@@ -1,12 +1,6 @@
 @use "global" as *;
 
 .slider {
-  margin-top: rem(17);
-  padding-bottom: rem(10);
-  margin-right: calc(50% - 50vw);
-  @include mq(md) {
-    margin-top: rem(40);
-  }
 }
 
 .slider__items {
@@ -61,6 +55,13 @@
     padding: rem(23) rem(16) rem(40);
   }
 }
+// Campaign__reset.cssを打ち消す
+.slider__body.slider__body--layout {
+  @include mq(md) {
+    margin-top: initial;
+    padding: rem(24) rem(24) rem(42);
+  }
+}
 
 .slider__label {
   display: inline-block;
@@ -87,7 +88,12 @@
   padding-bottom: rem(7);
   border-bottom: rem(1) solid $green;
 }
-
+.slider__title.slider__title--layout {
+  @include mq(md) {
+    font-size: rem(24);
+    padding-bottom: rem(1);
+  }
+}
 .slider__meta {
   display: flex;
   flex-direction: column;
@@ -98,7 +104,11 @@
     margin-top: rem(16);
   }
 }
-
+.slider__meta.slider__meta--layout {
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
 .slider__sub-title {
   font-family: $jp-font-family1;
   font-weight: $regular;
@@ -123,7 +133,12 @@
     gap: rem(25);
   }
 }
-
+.slider__price-unit.slider__price-unit--layout {
+  @include mq(md) {
+    margin-top: rem(7);
+    gap: rem(41);
+  }
+}
 .slider__old-price {
   font-family: $en-font-family2;
   font-size: rem(20);
@@ -134,6 +149,11 @@
   @include mq(md) {
     font-size: rem(24);
     margin-top: initial;
+  }
+}
+.slider__old-price.slider__old-price--layout {
+  @include mq(md) {
+    margin-top: rem(8);
   }
 }
 .slider__old-price::before {
@@ -216,7 +236,7 @@
 .slider__detail {
   height: inherit;
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(22);
   }
 }
 
@@ -225,14 +245,6 @@
   @include mq(md) {
     display: block;
   }
-}
-
-.slider__text {
-  color: $dark-green;
-  font-family: $jp-font-family1;
-  font-size: rem(16);
-  font-weight: $normal;
-  line-height: calc(24 / 16);
 }
 
 .slider__box {
@@ -256,11 +268,12 @@
   font-weight: $normal;
   line-height: calc(18 / 14);
 }
-
 .slider__button-block {
-  margin-top: rem(16);
+  margin-top: rem(15);
 }
-
+.slider__button-block button::first-letter{
+  text-transform: capitalize;
+}
 /*//////////////////////////////////////
 終了
 /////////////////////////////////////*/

@@ -23,13 +23,12 @@
 }
 .hero__title {
   position: absolute;
-  top: calc(50% + rem(80));
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, calc(-50% - rem(80)));
+  transform: translate(-50%, -50%);
   text-transform: capitalize;
   @include mq(md) {
-    top: calc(50% + rem(90));
-    transform: translate(-50%, calc(-50% - rem(90)));
+    top: calc(50% + rem(50));
   }
 }
 
