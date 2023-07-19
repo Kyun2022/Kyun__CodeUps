@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.gallery {
+}
+
+.gallery__inner {
+}
+
+.gallery__top-container {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.gallery__topImage-left {
+}
+
+.gallery__topImage-right {
+}
+
+.gallery__topImage-top {
+}
+
+.gallery__topImage-bottom {
+}
+
+.gallery__bottom-container {
+}
+
+.gallery__bottom-left {
+}
+
+.gallery__bottom-top {
+}
+
+.gallery__bottom-bottom {
+}
+
+.gallery__bottom-right {
+}

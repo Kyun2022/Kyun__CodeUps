@@ -26,12 +26,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-transform: capitalize;
   @include mq(md) {
     top: calc(50% + rem(50));
   }
 }
-
+.hero__title::first-letter {
+  text-transform: capitalize;
+}
 .hero__title-text {
   color: $white;
   font-family: $en-font-family2;
