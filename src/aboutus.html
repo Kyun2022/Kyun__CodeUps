@@ -29,21 +29,15 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
-<!-- ローディング -->
 
-<body class="fixed">
-  <div class="loading js-loading">
-    <div class="loading__title js-loadingTitle">
-      <h2 class="loading__title-text">DIVING</h2>
-      <p class="loading__title-subtext">into&nbsp;the&nbsp;ocean</p>
-    </div>
-  </div>
-
+<body>
   <!-- ヘッダー -->
   <header class="header">
     <div class="header__inner">
@@ -162,33 +156,90 @@
       </div>
     </section>
 
+    <!-- ギャラリー -->
     <section class="gallery another-gallery">
+      <figure class="gallery__decoration gallery__decoration--md-none"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
       <div class="gallery__inner inner">
         <div class="gallery_title title title--center">
           <p class="title__text">gallery</p>
           <h2 class="title__sub-text">フォト</h2>
         </div>
+
         <div class="gallery__top-container">
-          <figure class="gallery__topImage-left"><img src="./assets/images/common/gallery_1.jpg" alt=""></figure>
+          <figure class="gallery__topImage-left gallery__imageButton" data-micromodal-trigger="js-modal1">
+            <img src="./assets/images/common/gallery_1.jpg" alt="">
+          </figure>
           <div class="gallery__topImage-right">
-            <figure class="gallery__topImage-top"><img src="./assets/images/common/gallery_2.jpg" alt=""></figure>
-            <figure class="gallery__topImage-bottom"><img src="./assets/images/common/gallery_3.jpg" alt=""></figure>
+            <figure class="gallery__topImage-top gallery__imageButton" data-micromodal-trigger="js-modal2">
+              <img src="./assets/images/common/gallery_2.jpg" alt="">
+            </figure>
+            <figure class="gallery__topImage-bottom gallery__imageButton" data-micromodal-trigger="js-modal3">
+              <img src="./assets/images/common/gallery_3.jpg" alt="">
+            </figure>
           </div>
         </div>
         <div class="gallery__bottom-container">
-          <div class="gallery__bottom-left">
-            <figure class="gallery__bottom-top"><img src="./assets/images/common/gallery_4.jpg" alt=""></figure>
-            <figure class="gallery__bottom-bottom"><img src="./assets/images/common/gallery_5.jpg" alt=""></figure>
+          <div class="gallery__bottomImage-left">
+            <figure class="gallery__bottomImage-top gallery__imageButton" data-micromodal-trigger="js-modal4">
+              <img src="./assets/images/common/gallery_4.jpg" alt="">
+            </figure>
+            <figure class="gallery__bottomImage-bottom gallery__imageButton" data-micromodal-trigger="js-modal5">
+              <img src="./assets/images/common/gallery_5.jpg" alt="">
+            </figure>
           </div>
-          <figure class="gallery__bottom-right"><img src="./assets/images/common/gallery_6.jpg" alt=""></figure>
+          <figure class="gallery__bottomImage-right gallery__imageButton" data-micromodal-trigger="js-modal6">
+            <img src="./assets/images/common/gallery_6.jpg" alt="">
+          </figure>
+        </div>
+
+        <!-- モーダル -->
+        <div class="modal modal--slide" id="js-modal1" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_1.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--slide" id="js-modal2" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_2.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--slide" id="js-modal3" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_3.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--slide" id="js-modal4" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_4.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--slide" id="js-modal5" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_5.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--slide" id="js-modal6" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__image" role="dialog" aria-modal="true">
+              <img src="./assets/images/common/gallery_6.jpg" alt="" data-micromodal-close />
+            </div>
+          </div>
         </div>
       </div>
-
-
     </section>
 
     <!-- contact -->
-    <section class="contact contact--sub" id="contact">
+    <section class="contact contact--sub-sp" id="contact">
       <figure class="contact__decoration"><img src="./assets/images/common/fishes-contact.png" alt="魚の群れの様子"></figure>
       <div class="contact__inner inner">
         <div class="contact__container">

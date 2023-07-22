@@ -205,7 +205,7 @@
   margin-left: rem(80);
 }
 /* 前への矢印カスタマイズ */
-.slider__prevButton:after {
+.slider__nextButton:after {
   position: absolute;
   top: 45%;
   left: 10%;
@@ -218,7 +218,7 @@
   border-left: rem(1) solid $green;
 }
 /* 次への矢印カスタマイズ */
-.slider__nextButton:after {
+.slider__prevButton:after {
   position: absolute;
   top: 45%;
   right: 10%;

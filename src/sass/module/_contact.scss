@@ -11,6 +11,13 @@
   margin-top: rem(26);
   padding-bottom: rem(102);
 }
+.contact--sub-sp {
+  margin-top: rem(26);
+  padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
 .contact__decoration {
   position: absolute;
   top: rem(54);

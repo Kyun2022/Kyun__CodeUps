@@ -25,11 +25,17 @@
   width: rem(162);
   border: 1px solid $green;
   background-color: $white;
+  color: $green;
   line-height: calc(22 / 14);
 }
+.tab__text:hover {
+  background-color: $green;
+  color: $white;
+  transition: 0.3s;
+}
+
 .tab__text a {
   display: inline-block;
-  color: $green;
   font-family: $jp-font-family1;
   font-size: rem(14);
   font-weight: $normal;
