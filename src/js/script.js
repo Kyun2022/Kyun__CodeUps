@@ -255,4 +255,37 @@ aboutUs
     awaitOpenAnimation: true,
     disableScroll: true,
   });
+  /*//////////////////////////////////////
+information
+/////////////////////////////////////*/
+
+  // タブメニュー
+  const $js_tab = $(".js-infoTab__trigger");
+  const $js_tab_target = $(".js-infoContent__target");
+  const cls = "is-active";
+
+  $js_tab.on("click", function () {
+    const this_category = $(this).data("category");
+
+    $js_tab.removeClass(cls);
+
+    $(this).addClass(cls);
+
+    $js_tab_target.removeClass(cls);
+
+    $js_tab_target.each(function () {
+      const target_data = $(this).data("target");
+      if (this_category === target_data) {
+        $(this).addClass(cls);
+      }
+    });
+  });
+  /*//////////////////////////////////////
+blog
+/////////////////////////////////////*/
+ 
+
+  /*//////////////////////////////////////
+終了
+/////////////////////////////////////*/
 });

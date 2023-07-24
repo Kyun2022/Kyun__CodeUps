@@ -7,11 +7,25 @@
     padding: rem(140) 0 rem(160);
   }
 }
-.contact.contact--sub {
+.contact--campaign,
+.contact--info,
+.contact--blog {
   margin-top: rem(26);
   padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: initial;
+    padding-bottom: rem(160);
+  }
 }
-.contact--sub-sp {
+.contact--blog-detail {
+  margin-top: rem(40);
+  padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: initial;
+    padding-bottom: rem(160);
+  }
+}
+.contact--aboutUs {
   margin-top: rem(26);
   padding-bottom: rem(102);
   @include mq(md) {
