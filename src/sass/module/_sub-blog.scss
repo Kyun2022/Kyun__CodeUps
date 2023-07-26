@@ -48,8 +48,8 @@
 .sub-blog__aside-container {
   margin-top: rem(80);
   width: 100%;
-  padding-right: rem(25);
-  padding-left: rem(25);
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
   @include mq(md) {
     padding-right: initial;
     padding-left: initial;
@@ -59,7 +59,6 @@
   }
 }
 .sub-blog__aside-container.sub-blog__aside-container--detail {
-  
   @include mq(md) {
     margin-left: rem(86);
   }

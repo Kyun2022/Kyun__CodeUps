@@ -33,6 +33,9 @@
 .hero__title::first-letter {
   text-transform: capitalize;
 }
+.hero__title--uppercase {
+  text-transform: uppercase;
+}
 .hero__title-text {
   color: $white;
   font-family: $en-font-family2;

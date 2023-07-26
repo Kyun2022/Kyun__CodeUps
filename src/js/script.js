@@ -281,9 +281,30 @@ information
     });
   });
   /*//////////////////////////////////////
-blog
+FAQ
 /////////////////////////////////////*/
- 
+  $(function () {
+    // 最初のコンテンツは表示
+    $(".accordion__item:first-of-type .accordion__content").css(
+      "display",
+      "block"
+    );
+    // 最初の矢印は開いた時の状態に
+    $(".accordion__item:first-of-type .js-faqAccordion__title").addClass(
+      "open"
+    );
+    // タイトルをクリックすると
+    $(".js-faqAccordion__title").on("click", function () {
+      // クリックしたタイトル以外のopenクラスを外す
+      $(".js-faqAccordion__title").not(this).removeClass("open");
+      // クリックしたタイトル以外のcontentを閉じる
+      $(".js-faqAccordion__title").not(this).next().slideUp(300);
+      // クリックしたタイトルにopenクラスを付与
+      $(this).toggleClass("open");
+      // クリックしたタイトルのcontentを開閉
+      $(this).next().slideToggle(300);
+    });
+  });
 
   /*//////////////////////////////////////
 終了

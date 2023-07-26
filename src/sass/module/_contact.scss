@@ -9,7 +9,9 @@
 }
 .contact--campaign,
 .contact--info,
-.contact--blog {
+.contact--blog,
+.contact--price,
+.contact--faq {
   margin-top: rem(26);
   padding-bottom: rem(102);
   @include mq(md) {

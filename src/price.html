@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps | Campaign </title>
+  <title>CodeUps | Price </title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -29,12 +29,20 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
-<body>
+<body class="js-fixed">
+  <div class="loading js-loading">
+    <div class="loading__title js-loadingTitle">
+      <h2 class="loading__title-text">DIVING</h2>
+      <p class="loading__title-subtext">into&nbsp;the&nbsp;ocean</p>
+    </div>
+  </div>
 
   <!-- ヘッダー -->
   <header class="header">
@@ -120,144 +128,111 @@
   <main>
     <section class="hero">
       <picture>
-        <source srcset="./assets/images/common/sub-campaign__hero-pc.jpg" media="(min-width:768px)">
-        <img src="./assets/images/common/sub-campaign__hero-sp.jpg" alt="">
+        <source srcset="./assets/images/common/sub-price__hero-pc.jpg" media="(min-width:768px)">
+        <img src="./assets/images/common/sub-price__hero-sp.jpg" alt="">
       </picture>
       <div class="hero__title">
-        <h2 class="hero__title-text">campaign</h2>
+        <h2 class="hero__title-text">price</h2>
       </div>
     </section>
 
-    <div class="sub-campaign">
-      <figure class="sub-campaign__decoration"><img src="/assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
-      <div class="sub-campaign__inner inner">
-        <div class="sub-campaign__breadcrumb">
-          <p class="sub-campaign__breadcrumb-text">TOP&nbsp;&gt;&nbsp;キャンペーン</p>
+    <div class="sub-price">
+      <figure class="sub-price__decoration"><img src="/assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
+      <div class="sub-price__inner inner">
+        <div class="sub-price__breadcrumb breadcrumb">
+          <p class="breadcrumb-text">TOP&nbsp;&gt;&nbsp;料金一覧</p>
         </div>
-        <div class="sub-campaign__tab tab">
-          <p class="tab__text tab__text--green"><a href="#">all</a></p>
-          <p class="tab__text"><a href="#">ライセンス講習</a></p>
-          <p class="tab__text"><a href="#">ファンダイビング</a></p>
-          <p class="tab__text"><a href="#">体験ダイビング</a></p>
-        </div>
-        <div class="sub-campaign__menu">
-          <div class="sub-campaign__items slider">
-            <article class="slider__item">
-              <figure class="slider__image"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
-              <div class="slider__body slider__body--layout">
-                <p class="slider__label">ライセンス講習</p>
-                <h3 class="slider__title slider__title--layout">ライセンス取得</h3>
-                <div class="slider__meta slider__meta--layout">
-                  <h4 class="slider__sub-title">全部コミコミ&#040;お一人様&#041;</h4>
-                  <div class="slider__price-unit slider__price-unit--layout">
-                    <p class="slider__old-price slider__old-price--layout">&#165;56&#44;000</p>
-                    <p class="slider__new-price">&#165;46&#44;000</p>
-                  </div>
-                </div>
-                <div class="slider__detail slider__detail--md-none">
-                  <p class="slider__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="slider__box">
-                    <p class="slider__date">2023&#047;6&#047;1&#045;9&#047;30</p>
-                    <p class="slider__sub-text">ご予約・お問い合わせはコチラ</p>
-                    <div class="slider__button-block">
-                      <button class="button" onclick="location.href='#'">contact&nbsp;us<span class="button__arrow"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="slider__item">
-              <figure class="slider__image"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
-              <div class="slider__body slider__body--layout">
-                <p class="slider__label">体験ダイビング</p>
-                <h3 class="slider__title slider__title--layout">貸切体験ダイビング</h3>
-                <div class="slider__meta slider__meta--layout">
-                  <h4 class="slider__sub-title">全部コミコミ&#040;お一人様&#041;</h4>
-                  <div class="slider__price-unit slider__price-unit--layout">
-                    <p class="slider__old-price slider__old-price--layout">&#165;24&#44;000</p>
-                    <p class="slider__new-price">&#165;18&#44;000</p>
-                  </div>
-                </div>
-                <div class="slider__detail slider__detail--md-none">
-                  <p class="slider__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="slider__box">
-                    <p class="slider__date">2023&#047;6&#047;1&#045;9&#047;30</p>
-                    <p class="slider__sub-text">ご予約・お問い合わせはコチラ</p>
-                    <div class="slider__button-block">
-                      <button class="button" onclick="location.href='#'">contact&nbsp;us<span class="button__arrow"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="slider__item">
-              <figure class="slider__image"><img src="./assets/images/common/slider_3.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
-              <div class="slider__body slider__body--layout">
-                <p class="slider__label">体験ダイビング</p>
-                <h3 class="slider__title slider__title--layout">ナイトダイビング</h3>
-                <div class="slider__meta slider__meta--layout">
-                  <h4 class="slider__sub-title">全部コミコミ&#040;お一人様&#041;</h4>
-                  <div class="slider__price-unit slider__price-unit--layout">
-                    <p class="slider__old-price slider__old-price--layout">&#165;10,000</p>
-                    <p class="slider__new-price">&#165;8,000</p>
-                  </div>
-                </div>
-                <div class="slider__detail slider__detail--md-none">
-                  <p class="slider__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="slider__box">
-                    <p class="slider__date">2023&#047;6&#047;1&#045;9&#047;30</p>
-                    <p class="slider__sub-text">ご予約・お問い合わせはコチラ</p>
-                    <div class="slider__button-block">
-                      <button class="button" onclick="location.href='#'">contact&nbsp;us<span class="button__arrow"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="slider__item">
-              <figure class="slider__image"> <img src="./assets/images/common/slider_4.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
-              <div class="slider__body slider__body--layout">
-                <p class="slider__label">ファンダイビング</p>
-                <h3 class="slider__title slider__title--layout">貸切ファンダイビング</h3>
-                <div class="slider__meta slider__meta--layout">
-                  <h4 class="slider__sub-title">全部コミコミ&#040;お一人様&#041;</h4>
-                  <div class="slider__price-unit slider__price-unit--layout">
-                    <p class="slider__old-price slider__old-price--layout">&#165;20&#44;000</p>
-                    <p class="slider__new-price">&#165;16&#44;000</p>
-                  </div>
-                </div>
-                <div class="slider__detail slider__detail--md-none">
-                  <p class="slider__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="slider__box">
-                    <p class="slider__date">2023&#047;6&#047;1&#045;9&#047;30</p>
-                    <p class="slider__sub-text">ご予約・お問い合わせはコチラ</p>
-                    <div class="slider__button-block">
-                      <button class="button" onclick="location.href='#'">contact&nbsp;us<span class="button__arrow"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
+        <div class="sub-price__container priceBox">
+          <div class="priceBox__container">
+            <div class="priceBox__theme">
+              <p class="priceBox__theme-text">ライセンス講習</p>
+            </div>
+            <div class="priceBox__items">
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">オープンウォーター<br class="priceBox__br">ダイバーコース</dt>
+                <dd class="priceBox__price">&#165;50&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">アドバンスド<br class="priceBox__br">オープンウォーターコース</dt>
+                <dd class="priceBox__price">&#165;60&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">レスキュー＋EFRコース</dt>
+                <dd class="priceBox__price">&#165;70&#44;000</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <div class="sub-campaign__pageNation pageNation">
-          <ul class="pageNation__items">
-            <li class="pageNation__item"><a href="#">&lt;</a></li>
-            <li class="pageNation__item pageNation__item--current"><a href="#">1</a></li>
-            <li class="pageNation__item"><a href="#">2</a></li>
-            <li class="pageNation__item"><a href="#">3</a></li>
-            <li class="pageNation__item"><a href="#">4</a></li>
-            <li class="pageNation__item pageNation__item--md-none"><a href="#">5</a></li>
-            <li class="pageNation__item pageNation__item--md-none"><a href="#">6</a></li>
-            <li class="pageNation__item"><a href="#">&gt;</a></li>
-          </ul>
+          <div class="priceBox__container">
+            <div class="priceBox__theme">
+              <p class="priceBox__theme-text">体験ダイビング</p>
+            </div>
+            <div class="priceBox__items">
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ビーチ体験ダイビング<br class="priceBox__br">(半日)</dt>
+                <dd class="priceBox__price">&#165;7&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ビーチ体験ダイビング<br class="priceBox__br">(1日)</dt>
+                <dd class="priceBox__price">&#165;14&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ボート体験ダイビング<br class="priceBox__br">(半日)</dt>
+                <dd class="priceBox__price">&#165;10&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ボート体験ダイビング<br class="priceBox__br">(1日)</dt>
+                <dd class="priceBox__price">&#165;18&#44;000</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="priceBox__container">
+            <div class="priceBox__theme">
+              <p class="priceBox__theme-text">ファンダイビング</p>
+            </div>
+            <div class="priceBox__items">
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ビーチダイビング<br class="priceBox__br">(2ダイブ)</dt>
+                <dd class="priceBox__price">&#165;14&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ボートダイビング<br class="priceBox__br">(2ダイブ)</dt>
+                <dd class="priceBox__price">&#165;18&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">スペシャルダイビング<br class="priceBox__br">(2ダイブ)</dt>
+                <dd class="priceBox__price">&#165;24&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ナイトダイビング<br class="priceBox__br">(1ダイブ)</dt>
+                <dd class="priceBox__price">&#165;10&#44;000</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="priceBox__container">
+            <div class="priceBox__theme">
+              <p class="priceBox_theme-text">スペシャルダイビング</p>
+            </div>
+            <div class="priceBox__items">
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">貸切ダイビング<br class="priceBox__br">(2ダイブ)</dt>
+                <dd class="priceBox__price">&#165;24&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">1日ダイビング<br class="priceBox__br">(3ダイブ)</dt>
+                <dd class="priceBox__price">&#165;32&#44;000</dd>
+              </dl>
+              <dl class="priceBox__wrapper">
+                <dt class="priceBox__content">ナイトダイビング<br class="priceBox__br">(2ダイブ)</dt>
+                <dd class="priceBox__price">&#165;14&#44;000</dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-
     <!-- contact -->
-    <section class="contact contact--sub" id="contact">
+    <section class="contact contact--price" id="contact">
       <figure class="contact__decoration"><img src="./assets/images/common/fishes-contact.png" alt="魚の群れの様子"></figure>
       <div class="contact__inner inner">
         <div class="contact__container">
