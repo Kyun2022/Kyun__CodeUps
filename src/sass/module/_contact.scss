@@ -19,6 +19,31 @@
     padding-bottom: rem(160);
   }
 }
+.contact--siteMap {
+  margin-top: rem(34);
+  padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: initial;
+    padding-bottom: rem(160);
+  }
+}
+.contact--privacyPolicy {
+  margin-top: rem(29);
+  padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: rem(34);
+    padding-bottom: rem(160);
+  }
+}
+
+.contact--termsOfService {
+  margin-top: rem(29);
+  padding-bottom: rem(102);
+  @include mq(md) {
+    margin-top: initial;
+    padding-bottom: rem(160);
+  }
+}
 .contact--blog-detail {
   margin-top: rem(40);
   padding-bottom: rem(102);

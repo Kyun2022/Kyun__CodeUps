@@ -47,3 +47,11 @@
     line-height: calc(100 / 80);
   }
 }
+
+.hero__title-text--big {
+  text-transform: uppercase;
+}
+
+.hero__title-text--capitalize {
+  text-transform: capitalize;
+}

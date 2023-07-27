@@ -142,104 +142,92 @@
         <div class="sub-contact__breadcrumb breadcrumb">
           <p class="breadcrumb-text">TOP&nbsp;&gt;&nbsp;お問い合わせ</p>
         </div>
-        <div class="sub-contact__content contactForm">
-          <form >
-            <dl>
-              <dt class="contactForm__name">
-                お名前
-              </dt>
-              <dd class="contactForm__name-inputText">
-                <input type="text" name="company" value="沖縄&emsp;太郎">
-              </dd>
-            </dl>
-            <dl>
-              <dt class="contactForm__mail">
-                メールアドレス
-              </dt>
-              <dd class="contactForm__mail-inputText">
-                <input type="email" name="mail_address" value="" class="">
-              </dd>
-            </dl>
-            <dl>
-              <dt class="contactForm__telephoneNumber">
-                タイプ：テキスト
-              </dt>
-              <dd class="contactForm__telephoneNumber-inputText">
-                <input type="text" name="telephone_number" value="">
-              </dd>
-            </dl>
-            <dl>
-              <dt class="contactForm__contactItem">
-                お問合せ項目
-              </dt>
-              <dd class="contactForm__contactItem-inputText">
-                <label for=""><input type="checkbox" name="hoge" value="チェックボックス1" checked><span>ダイビング講習について</span></label>
-                <label for=""><input type="checkbox" name="hoge" value="チェックボックス2" checked><span>ファンデイビングについて</span></label>
-                <label for=""><input type="checkbox" name="hoge" value="チェックボックス2" checked><span>体験ダイビングについて</span></label>
-              </dd>
-            </dl>
-            <dl>
-              <dt class="contactForm__campaign">
-                キャンペーン
-              </dt>
-              <dd class="contactForm__campaign-option">
-                <select name="hoge" class="">
-                  <option value="">キャンペーン内容を選択</option>
-                  <option value="セレクト1">選択してください</option>
-                  <option value="セレクト2">選択してください</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt class="contactForm__textarea">
-                お問合せ内容
-              </dt>
-              <dd class="contactForm__textarea-inputText">
-                <textarea name="contents"></textarea>
-              </dd>
-            </dl>
-            <div class="contactForm__button-container">
-              <p class="contactForm__text">個人情報の取り扱いについて同意のうえ送信します。</p>
-              <button class="button" onclick="location.href='price.html'">Send<span class="button__arrow"></span></button>
-            </div>
-          </form>
+        <div class="sub-contact__content">
+          <div class="sub-contact__content-error sub-contact__content-error--all-none">
+            <p class="sub-contact__content-errorText">必須項目が入力されていません。<br class="sub-contact__content-errorText--md-show">入力してください。</p>
+          </div>
+          <div class="sub-contact__form contactForm">
+            <form>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title">
+                    お名前
+                  </dt>
+                  <dd class="contactForm__body">
+                    <input type="text" name="your_name" placeholder="沖縄&emsp;太郎" required>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title">
+                    メールアドレス
+                  </dt>
+                  <dd class="contactForm__body">
+                    <input type="email" name="mail_address" placeholder="aaa000@gmail.com" required>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title">
+                    電話番号
+                  </dt>
+                  <dd class="contactForm__body">
+                    <input type="text" name="telephone_number" placeholder="000-0000-0000" required>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title">
+                    お問合せ項目
+                  </dt>
+                  <dd class="contactForm__body">
+                    <label class="contactForm__checkbox"><input type="checkbox" required><span>ダイビング講習について</span></label>
+                    <label class="contactForm__checkbox"><input type="checkbox" required><span>ファンデイビングについて</span></label>
+                    <label class="contactForm__checkbox"><input type="checkbox" required><span>体験ダイビングについて</span></label>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title contactForm__title--layout">
+                    キャンペーン
+                  </dt>
+                  <dd class="contactForm__body contactForm__body--select">
+                    <select name="select_button">
+                      <option value="">キャンペーン内容を選択</option>
+                      <option value="ライセンス取得">ライセンス取得</option>
+                      <option value="貸切体験ダイビング">貸切体験ダイビング</option>
+                      <option value="ナイトダイビング">ナイトダイビング</option>
+                    </select>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__container">
+                <dl>
+                  <dt class="contactForm__title">
+                    お問合せ内容
+                  </dt>
+                  <dd class="contactForm__body">
+                    <textarea name="contents" required></textarea>
+                  </dd>
+                </dl>
+              </div>
+              <div class="contactForm__footer">
+                <div class="contactForm__footer-container">
+                  <label class="contactForm__text"><input type="checkbox" required><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+                </div>
+                <div class="contactForm__button">
+                  <button class="button" type="submit">Send<span class="button__arrow"></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
-
-    <!-- contact -->
-    <section class="contact contact--sub" id="contact">
-      <figure class="contact__decoration"><img src="./assets/images/common/fishes-contact.png" alt="魚の群れの様子"></figure>
-      <div class="contact__inner inner">
-        <div class="contact__container">
-          <div class="contact__info">
-            <div class="contact__logo-block">
-              <figure class="contact__logo"><a href="#"><img src="./assets/images/common/logo_2.png" alt="CodeUpsの文字、会社のロゴ"></a></figure>
-            </div>
-            <div class="contact__wrapper">
-              <div class="contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.40701233783!2d127.6646619769652!3d26.21596157706934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56996d05d1023%3A0x3afb03e18b00573f!2z44OR44K344OV44Kj44OD44Kv44Ob44OG44Or5rKW57iE!5e0!3m2!1sja!2sjp!4v1688297197575!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-              <ul class="contact__items">
-                <li class="contact__item">沖縄県那覇市1-1</li>
-                <li class="contact__item">TEL:0120-000-0000</li>
-                <li class="contact__item">営業時間:8:30-19:00</li>
-                <li class="contact__item">定休日:毎週火曜日</li>
-              </ul>
-            </div>
-          </div>
-          <div class="contact__action">
-            <div class="contact__title title title--center">
-              <p class="title__text title__text--big">contact</p>
-              <h2 class="title__sub-text title__sub-text--layout">お問い合わせ</h2>
-              <p class="title__emphasis">ご予約・お問い合わせはコチラ</p>
-              <div class="title__button">
-                <button class="button" onclick="location.href='#'">Contact&nbsp;us<span class="button__arrow"></span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- footer -->

@@ -16,7 +16,11 @@
   position: relative;
   z-index: 1;
 }
-
+.button.button--colorChange {
+  background-color: $white;
+  color: $green;
+  border: rem(1) solid $white;
+}
 .button::before {
   position: absolute;
   top: 0;
@@ -28,7 +32,9 @@
   border: rem(1) solid $green;
   z-index: -2;
 }
-
+.button.button--colorChange::before {
+  border: rem(1) solid $white;
+}
 .button::after {
   background-color: $white;
   position: absolute;
@@ -42,7 +48,9 @@
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
 }
-
+.button.button--colorChange::after {
+  background-color: $green;
+}
 .button__arrow {
   display: inline-block;
   content: "";
@@ -55,8 +63,18 @@
   margin-bottom: rem(3);
   z-index: -1;
 }
-
-
+.button__arrow--colorChange {
+  display: inline-block;
+  content: "";
+  width: rem(40);
+  height: rem(8);
+  transform: skew(45deg);
+  border-bottom: rem(1) solid $green;
+  border-right: rem(1) solid $green;
+  margin-left: rem(8);
+  margin-bottom: rem(3);
+  z-index: -1;
+}
 /*//////////////////////////////////////
 ホバー時スライドして色が変化する
 /////////////////////////////////////*/
@@ -66,14 +84,23 @@
   transform: scale(1, 1);
 }
 
-.button:hover::after{
-	transform-origin:left top;
-	transform:scale(1, 1);
+.button:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 .button:hover .button__arrow {
   border-bottom: rem(1) solid $green;
   border-right: rem(1) solid $green;
+}
+.button.button--colorChange:hover {
+  color: $white;
+  transform: scale(1, 1);
+}
+
+.button.button--colorChange:hover .button__arrow--colorChange {
+  border-bottom: rem(1) solid $white;
+  border-right: rem(1) solid $white;
 }
 /*//////////////////////////////////////
 終了
