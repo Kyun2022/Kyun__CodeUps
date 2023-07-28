@@ -124,3 +124,9 @@
 .header__item--big {
   text-transform: uppercase;
 }
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.header.drawer-menu.headerColorScroll {
+  background-color: #ff6347;
+  transition: color 0.4s ease-out;
+}
