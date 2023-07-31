@@ -5,17 +5,16 @@
 }
 
 .sub-price__decoration {
-  position: absolute;
-  top: rem(50);
+ position: absolute;
+  top: rem(-25);
   left: rem(15);
   width: rem(120);
   height: rem(55);
-  z-index: 1;
+  z-index: -1;
   @include mq(md) {
-    top: rem(100);
+    top: rem(-71);
     width: rem(301);
     height: rem(138);
-    z-index: -1;
     left: calc(
       ((100vw - rem(1440)) / 2 + rem(98)) - min(rem(0), (100vw - rem(1293)) / 2)
     );

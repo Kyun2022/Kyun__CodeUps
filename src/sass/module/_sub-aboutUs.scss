@@ -10,19 +10,18 @@
 }
 .sub-aboutUs__decoration {
   position: absolute;
-  z-index: 3;
-  top: rem(49);
+  top: rem(-25);
   left: rem(15);
-
   width: rem(120);
   height: rem(55);
+  z-index: -1;
   @include mq(md) {
-    top: rem(100);
+    top: rem(-71);
+    width: rem(301);
+    height: rem(138);
     left: calc(
       ((100vw - rem(1440)) / 2 + rem(98)) - min(rem(0), (100vw - rem(1293)) / 2)
     );
-    width: rem(301);
-    height: rem(138);
   }
 }
 
