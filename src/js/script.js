@@ -290,6 +290,32 @@ information
       }
     });
   });
+
+  /*//////////////////////////////////////
+blog
+/////////////////////////////////////*/
+  $(function () {
+    // タイトルをクリックすると
+    // タイトルをクリックすると
+    $(".js-archive-item--old").on("click", function () {
+      // クリックした次の要素を開閉
+      $(".js-subItems--old").next().slideToggle(600);
+      // タイトルにopenクラスを付け外しして矢印の向きを変更
+      $(".js-subItems--old").toggleClass("open", 600);
+      $(".archive__item--oldLayout").toggleClass("open", 600);
+    });
+  });
+  $(function () {
+    // タイトルをクリックすると
+    $(".js-archive-item--new").on("click", function () {
+      // クリックした次の要素を開閉
+      $(".js-subItems--new").next().slideToggle(600);
+      // タイトルにopenクラスを付け外しして矢印の向きを変更
+      $(".js-subItems--new").toggleClass("open", 600);
+      $(".archive__item--newLayout").toggleClass("open", 600);
+    });
+  });
+
   /*//////////////////////////////////////
 FAQ
 /////////////////////////////////////*/
