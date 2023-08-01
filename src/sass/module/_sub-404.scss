@@ -2,11 +2,7 @@
 
 .sub-404 {
   position: relative;
-  padding-top: rem(80);
   background-color: $green;
-  @include mq(md) {
-    padding-top: rem(90);
-  }
 }
 
 .sub-404__inner {
@@ -68,7 +64,6 @@
   @include mq(md) {
     font-size: rem(160);
     line-height: 1.5;
-
   }
 }
 

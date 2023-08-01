@@ -9,7 +9,7 @@
   position: relative;
 }
 .sub-information__decoration {
- position: absolute;
+  position: absolute;
   top: rem(-25);
   left: rem(15);
   width: rem(120);
@@ -25,20 +25,18 @@
   }
 }
 .sub-information__tab {
-  margin-top: rem(120);
   display: flex;
   justify-content: center;
   gap: rem(19);
   @include mq(md) {
     justify-content: initial;
     gap: calc((90 / 1100) * 100%);
-    margin-top: rem(150);
   }
 }
 
 .sub-information__items {
   margin-top: rem(14);
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(24);
-}
+  }
 }

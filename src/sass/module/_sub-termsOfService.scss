@@ -21,14 +21,10 @@
   }
 }
 
-.sub-termsOfService__container {
-  margin-top: rem(52);
+.sub-termsOfService__inner.inner {
   width: 100%;
   max-width: rem(500);
-  margin-right: auto;
-  margin-left: auto;
   @include mq(md) {
-    margin-top: rem(150);
     max-width: rem(800);
   }
 }

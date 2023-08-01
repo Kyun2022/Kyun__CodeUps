@@ -20,19 +20,17 @@
     );
   }
 }
-.sub-thanks__container {
-  margin-top: rem(52);
+
+.sub-thanks__inner.inner {
   width: 100%;
   max-width: 100%;
-  padding-bottom: rem(144);
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   @include mq(md) {
-    margin-top: rem(150);
     max-width: rem(700);
-    padding-bottom: rem(120);
   }
+}
+
+.sub-thanks__container {
+  text-align: center;
 }
 
 .sub-thanks__title {

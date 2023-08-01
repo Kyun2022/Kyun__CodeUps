@@ -3,9 +3,16 @@
 .sub-price {
   position: relative;
 }
-
+.sub-price__inner.inner {
+  width: 100%;
+  max-width: rem(500);
+  @include mq(md) {
+    width: 100%;
+    max-width: rem(750);
+  }
+}
 .sub-price__decoration {
- position: absolute;
+  position: absolute;
   top: rem(-25);
   left: rem(15);
   width: rem(120);
@@ -21,17 +28,3 @@
   }
 }
 
-.sub-price__container {
-  margin-top: rem(53);
-  width: 100%;
-  max-width: rem(500);
-  margin-right: auto;
-  margin-left: auto;
-  @include mq(md) {
-    margin-top: rem(148);
-    width: 100%;
-    max-width: rem(750);
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
-  }
-}

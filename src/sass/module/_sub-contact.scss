@@ -5,7 +5,7 @@
 }
 
 .sub-contact__decoration {
- position: absolute;
+  position: absolute;
   top: rem(-25);
   left: rem(15);
   width: rem(120);
@@ -20,15 +20,10 @@
     );
   }
 }
-
-.sub-contact__content {
-  margin-top: rem(52);
+.sub-contact__inner.inner {
   width: 100%;
   max-width: rem(500);
-  margin-right: auto;
-  margin-left: auto;
   @include mq(md) {
-    margin-top: rem(150);
     max-width: rem(700);
   }
 }

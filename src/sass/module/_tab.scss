@@ -2,7 +2,6 @@
 
 .tab {
   width: fit-content;
-  margin-top: rem(52);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(17);
@@ -11,7 +10,6 @@
   margin-right: auto;
   margin-left: auto;
   @include mq(md) {
-    margin-top: rem(150);
     grid-template-columns: repeat(4, 1fr);
     max-width: rem(744);
     gap: rem(30);

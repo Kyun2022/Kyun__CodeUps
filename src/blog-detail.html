@@ -134,11 +134,11 @@
       <p class="breadcrumb-text">TOP&nbsp;&gt;&nbsp;ブログ一覧&nbsp;&gt;&nbsp;ブログ詳細</p>
     </div>
 
-    <div class="sub-blog">
+    <div class="sub-blog under-blog-detail">
       <figure class="sub-blog__decoration"><img src="/assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
       <div class="sub-blog__inner inner">
-        <div class="sub-blog__container sub-blog__container--detail detail">
-          <div class="detail__container ">
+        <div class="sub-blog__container detail">
+          <div class="detail__container">
             <div class="detail__body">
               <time datetime="2023-11-17" class="detail__date">2023/11/17</time>
               <h3 class="detail__title">ライセンス取得</h3>
@@ -170,7 +170,7 @@
               <li class="detail__pageNation-item"><a href="#">&gt;</a></li>
             </ul>
           </div>
-          <aside class="sub-blog__aside-container sub-blog__aside-container--detail aside">
+          <aside class="sub-blog__aside-container aside">
             <div class="aside__popular-box">
               <div class="aside__title">
                 <p class="aside__title-text">人気記事</p>
@@ -230,30 +230,34 @@
               </div>
               <div class="aside__container slider">
                 <article class="slider__item slider__item--sub">
-                  <figure class="slider__image slider__image--sub"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
-                  <div class="slider__body slider__body--sub">
-                    <h3 class="slider__title slider__title--sub">ライセンス取得</h3>
-                    <div class="slider__meta slider__meta--sub">
-                      <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                      <div class="slider__price-unit slider__price-unit--sub">
-                        <p class="slider__old-price slider__old-price--sub">&#165;56,000</p>
-                        <p class="slider__new-price slider__new-price--sub">&#165;46,000</p>
+                  <a href="#">
+                    <figure class="slider__image slider__image--sub"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                    <div class="slider__body slider__body--sub">
+                      <h3 class="slider__title slider__title--sub">ライセンス取得</h3>
+                      <div class="slider__meta slider__meta--sub">
+                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                        <div class="slider__price-unit slider__price-unit--sub">
+                          <p class="slider__old-price slider__old-price--sub">&#165;56,000</p>
+                          <p class="slider__new-price slider__new-price--sub">&#165;46,000</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </article>
                 <article class="slider__item slider__item--sub">
-                  <figure class="slider__image slider__image--sub"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
-                  <div class="slider__body slider__body--sub">
-                    <h3 class="slider__title slider__title--sub">貸切体験ダイビング</h3>
-                    <div class="slider__meta slider__meta--sub">
-                      <h4 class="slider__sub-title slider__title--sub">全部コミコミ(お一人様)</h4>
-                      <div class="slider__price-unit slider__price-unit--sub">
-                        <p class="slider__old-price slider__old-price--sub">&#165;24&#44;000</p>
-                        <p class="slider__new-price slider__new-price--sub">&#165;18&#44;000</p>
+                  <a href="#">
+                    <figure class="slider__image slider__image--sub"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                    <div class="slider__body slider__body--sub">
+                      <h3 class="slider__title slider__title--sub">貸切体験ダイビング</h3>
+                      <div class="slider__meta slider__meta--sub">
+                        <h4 class="slider__sub-title slider__title--sub">全部コミコミ(お一人様)</h4>
+                        <div class="slider__price-unit slider__price-unit--sub">
+                          <p class="slider__old-price slider__old-price--sub">&#165;24&#44;000</p>
+                          <p class="slider__new-price slider__new-price--sub">&#165;18&#44;000</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </article>
               </div>
               <div class="aside-campaign__button">
@@ -266,17 +270,22 @@
               </div>
               <div class="archive__container">
                 <ul class="archive__items">
-                  <li class="archive__item archive__item--layout">2023</li>
+                  <li class="archive__item archive__item--newLayout js-archive-item--new">2023</li>
                   <li class="archive__item archive__item--close-layout">
-                    <ul class="archive__sub-items">
-                      <li class="archive__sub-item archive__sub-item--layout">3月</li>
-                      <li class="archive__sub-item archive__sub-item--layout">2月</li>
-                      <li class="archive__sub-item archive__sub-item--layout">1月</li>
+                    <ul class="archive__sub-items js-subItems--new">
+                      <li class="archive__sub-item archive__sub-item--layout"><a href="#">3月</a></li>
+                      <li class="archive__sub-item archive__sub-item--layout"><a href="#">2月</a></li>
+                      <li class="archive__sub-item archive__sub-item--layout"><a href="#">1月</a></li>
                     </ul>
                   </li>
                 </ul>
                 <ul class="archive__items">
-                  <li class="archive__item archive__item--layout">2022</li>
+                  <li class="archive__item archive__item--oldLayout js-archive-item--old">2022</li>
+                  <li class="archive__item archive__item--close-layout">
+                    <ul class="archive__sub-items js-subItems--old">
+                      <li class="archive__sub-item archive__sub-item--layout"><a href="#"></a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>

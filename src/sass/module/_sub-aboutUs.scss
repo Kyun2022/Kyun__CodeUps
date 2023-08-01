@@ -25,13 +25,6 @@
   }
 }
 
-.sub-aboutUs__images {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
-
 .sub-aboutUs__image-sky {
   position: relative;
   z-index: 2;
