@@ -97,7 +97,6 @@ Top
           $("body").removeClass("js-fixed");
           next();
         });
-
       sessionStorage.setItem("loadCount", 1);
     } else {
       // 2回目以降のロード時の処理
@@ -109,7 +108,7 @@ Top
   });
 
   // Swiper
-  const swiper = new Swiper(".js-mv__slider", {
+  const swiper = new Swiper(".js-mv-slider", {
     loop: true,
     allowTouchMove: false,
     effect: "fade",
@@ -121,7 +120,7 @@ Top
 
   // Swiperカード
   const mySwiperWrapper = document.querySelector(".swiper-wrapper");
-  const horizonSlider = new Swiper(".js-campaign__slider", {
+  const horizonSlider = new Swiper(".js-campaign-slider", {
     loop: true,
     effect: "slide",
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
@@ -271,8 +270,8 @@ information
 /////////////////////////////////////*/
 
   // タブメニュー
-  const $js_tab = $(".js-infoTab__trigger");
-  const $js_tab_target = $(".js-infoContent__target");
+  const $js_tab = $(".js-infoTab-trigger");
+  const $js_tab_target = $(".js-infoContent-target");
   const cls = "is-active";
 
   $js_tab.on("click", function () {
@@ -301,15 +300,13 @@ FAQ
       "block"
     );
     // 最初の矢印は開いた時の状態に
-    $(".accordion__item:first-of-type .js-faqAccordion__title").addClass(
-      "open"
-    );
+    $(".accordion__item:first-of-type .js-faqAccordion-title").addClass("open");
     // タイトルをクリックすると
-    $(".js-faqAccordion__title").on("click", function () {
+    $(".js-faqAccordion-title").on("click", function () {
       // クリックしたタイトル以外のopenクラスを外す
-      $(".js-faqAccordion__title").not(this).removeClass("open");
+      $(".js-faqAccordion-title").not(this).removeClass("open");
       // クリックしたタイトル以外のcontentを閉じる
-      $(".js-faqAccordion__title").not(this).next().slideUp(300);
+      $(".js-faqAccordion-title").not(this).next().slideUp(300);
       // クリックしたタイトルにopenクラスを付与
       $(this).toggleClass("open");
       // クリックしたタイトルのcontentを開閉
