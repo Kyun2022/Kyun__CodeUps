@@ -104,9 +104,7 @@
 
 .price__decoration {
   position: absolute;
-  left: calc(
-    ((100vw - rem(1440)) / 2 + rem(100)) - min(rem(0), (100vw - rem(1293)) / 2)
-  );
+ left: calc(50% - min(47.9166vw, 38.75rem));
   bottom: rem(60);
   width: rem(437);
   height: rem(201);

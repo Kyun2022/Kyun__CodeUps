@@ -14,9 +14,7 @@
   height: rem(55);
   @include mq(md) {
     top: rem(-77);
-    right: calc(
-      ((100vw - rem(1440)) / 2 + rem(79)) - min(rem(0), (100vw - rem(1330)) / 2)
-    );
+    right: calc(50% - min(47.9166vw, 40rem));
     width: rem(301);
     height: rem(138);
   }

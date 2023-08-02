@@ -5,9 +5,7 @@
   height: rem(138);
   position: absolute;
   top: rem(-124);
-  left: calc(
-    ((100vw - rem(1440)) / 2 + rem(100)) - min(rem(0), (100vw - rem(1293)) / 2)
-  );
+  left: calc(50% - min(47.9166vw, 38.75rem));
 }
 
 .voice__top-decoration--md-none {
@@ -46,9 +44,7 @@
   width: rem(71);
   height: rem(162);
   position: absolute;
-  right: calc(
-    ((100vw - rem(1440)) / 2 + rem(175)) - min(rem(0), (100vw - rem(1155)) / 2)
-  );
+  right: calc(50% - min(47.9166vw, 33.75rem));
   bottom: rem(-67);
 }
 

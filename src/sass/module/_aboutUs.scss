@@ -107,10 +107,7 @@
 .aboutUs__decoration {
   display: inline-block;
   position: absolute;
-  right: calc(
-    ((100vw - rem(1440)) / 2 + rem(76)) - min(rem(0), (100vw - rem(1344)) / 2)
-  );
-
+  right: calc(50% - min(47.9166vw, 39.8125rem));
   bottom: rem(-90);
   width: rem(194);
   height: rem(181);
