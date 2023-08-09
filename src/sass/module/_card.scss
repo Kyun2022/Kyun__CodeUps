@@ -1,6 +1,21 @@
 @use "global" as *;
 
 .card {
+  display: flex;
+  flex-direction: column;
+  padding: rem(18) rem(21) rem(24);
+  background-color: $white;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    padding: rem(18) rem(16) rem(24);
+  }
+}
+
+.card a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .card__image {

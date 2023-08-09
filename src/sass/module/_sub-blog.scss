@@ -4,6 +4,13 @@
   position: relative;
 }
 
+.sub-blog__inner.inner {
+  width: 100%;
+  max-width: rem(500);
+  @include mq(md) {
+    max-width: rem(1140);
+  }
+}
 .sub-blog__decoration {
   position: absolute;
   top: rem(-25);
