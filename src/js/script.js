@@ -302,10 +302,8 @@ information
     });
   });
 
-
-
+  //タブへダイレクトリンクの実装
   $(function () {
-    //タブへダイレクトリンクの実装
     //リンクからハッシュを取得
     var hash = location.hash;
     hash = (hash.match(/^#tab_panel-\d+$/) || [])[0];
@@ -314,7 +312,7 @@ information
       var tabName = hash.slice(1);
     } else {
       var tabName = "tab_panel-1";
-    }™
+    }
     //コンテンツ非表示・タブを非アクティブ
     $(".js-infoTab-trigger").removeClass("is-active");
     $(".js-infoContent-target").removeClass("is-active");
