@@ -79,6 +79,21 @@ Common
       }
     });
   });
+
+  $(function () {
+    // 別ページの場合は以下
+    var urlHash = location.hash;
+    if (urlHash) {
+      $("body,html").stop().scrollTop(0);
+      setTimeout(function () {
+        // ヘッダー固定の場合はヘッダーの高さを数値で入れる、固定でない場合は0
+        var headerHight = 130;
+        var target = $(urlHash);
+        var position = target.offset().top - headerHight;
+        $("body,html").stop().animate({ scrollTop: position }, 400);
+      }, 100);
+    }
+  });
   /*//////////////////////////////////////
 Top
 /////////////////////////////////////*/
@@ -276,13 +291,9 @@ information
 
   $js_tab.on("click", function () {
     const this_category = $(this).data("category");
-
     $js_tab.removeClass(cls);
-
     $(this).addClass(cls);
-
     $js_tab_target.removeClass(cls);
-
     $js_tab_target.each(function () {
       const target_data = $(this).data("target");
       if (this_category === target_data) {
@@ -291,6 +302,29 @@ information
     });
   });
 
+
+
+  $(function () {
+    //タブへダイレクトリンクの実装
+    //リンクからハッシュを取得
+    var hash = location.hash;
+    hash = (hash.match(/^#tab_panel-\d+$/) || [])[0];
+    //リンクにハッシュが入っていればtabNameに格納
+    if ($(hash).length) {
+      var tabName = hash.slice(1);
+    } else {
+      var tabName = "tab_panel-1";
+    }™
+    //コンテンツ非表示・タブを非アクティブ
+    $(".js-infoTab-trigger").removeClass("is-active");
+    $(".js-infoContent-target").removeClass("is-active");
+    //何番目のタブかを格納
+    var tabNo = $(".js-infoContent-target#" + tabName).index();
+    //コンテンツ表示
+    $(".js-infoContent-target").eq(tabNo).addClass("is-active");
+    //タブのアクティブ化
+    $(".js-infoTab-trigger").eq(tabNo).addClass("is-active");
+  });
   /*//////////////////////////////////////
 blog
 /////////////////////////////////////*/
@@ -320,23 +354,12 @@ blog
 FAQ
 /////////////////////////////////////*/
   $(function () {
-    // 最初のコンテンツは表示
-    $(".accordion__item:first-of-type .accordion__content").css(
-      "display",
-      "block"
-    );
-    // 最初の矢印は開いた時の状態に
-    $(".accordion__item:first-of-type .js-faqAccordion-title").addClass("open");
     // タイトルをクリックすると
     $(".js-faqAccordion-title").on("click", function () {
-      // クリックしたタイトル以外のopenクラスを外す
-      $(".js-faqAccordion-title").not(this).removeClass("open");
-      // クリックしたタイトル以外のcontentを閉じる
-      $(".js-faqAccordion-title").not(this).next().slideUp(300);
-      // クリックしたタイトルにopenクラスを付与
-      $(this).toggleClass("open");
-      // クリックしたタイトルのcontentを開閉
+      // クリックした次の要素を開閉
       $(this).next().slideToggle(300);
+      // タイトルにopenクラスを付け外しして矢印の向きを変更
+      $(this).toggleClass("open", 300);
     });
   });
 

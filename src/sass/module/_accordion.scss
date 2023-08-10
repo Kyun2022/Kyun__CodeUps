@@ -33,7 +33,7 @@
   position: absolute;
   top: 50%;
   right: rem(16);
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   transition: transform 0.3s ease-in-out;
   @include mq(md) {
     width: rem(32);
@@ -50,6 +50,7 @@
   right: rem(16);
   top: 50%;
   transition: opacity 0.3s ease-in-out;
+  opacity: 0;
   @include mq(md) {
     width: rem(32);
     right: rem(40);
@@ -57,11 +58,11 @@
 }
 /* 縦線(クリック後) */
 .accordion__title.open::before {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 /* 横線(クリック後) */
 .accordion__title.open::after {
-  opacity: 0;
+  opacity: 1;
 }
 
 .accordion__content {
